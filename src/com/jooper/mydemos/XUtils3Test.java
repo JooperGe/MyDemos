@@ -146,7 +146,8 @@ public class XUtils3Test extends BaseAct implements OnClickListener {
 
 		imageOptions = new ImageOptions.Builder().setIgnoreGif(true)
 				.setImageScaleType(ScaleType.FIT_XY)
-				.setLoadingDrawableId(R.drawable.abc_ic_clear).setRadius(50)// setRadius设置半径
+				.setLoadingDrawableId(R.drawable.search_clear_pressed)
+				.setRadius(50)// setRadius设置半径
 				.setFailureDrawableId(R.drawable.ic_launcher).build();
 
 	}
