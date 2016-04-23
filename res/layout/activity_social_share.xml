@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/tv_share_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是分享内容" />
+
+    <Button
+        android:id="@+id/btn_to_QQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享至QQ好友" />
+
+    <Button
+        android:id="@+id/btn_to_WXFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享至微信好友/群" />
+
+    <Button
+        android:id="@+id/btn_to_WXLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享至微信生活圈" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyDemos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Dialog -->
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+
+    <!-- RunningTextView -->
+    <string name="PLAY">PLAY</string>
+    <string name="defaultnum">00.00</string>
+    <string name="hint">输入数字，点击PLAY</string>
+    <string name="rmb">￥</string>
+    <string name="dollar">$</string>
+    <string name="uro">€</string>
+
+</resources>

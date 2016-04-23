@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_open_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开摄像头" />
+
+    <Button
+        android:id="@+id/btn_close_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭摄像头" />
+
+    <Button
+        android:id="@+id/btn_open_flash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开闪光灯" />
+
+    <Button
+        android:id="@+id/btn_close_flash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭闪光灯" />
+
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000" />
+
+</LinearLayout>

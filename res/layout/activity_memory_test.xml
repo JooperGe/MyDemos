@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ABCDEF"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn27_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看" />
+
+    <Button
+        android:id="@+id/btn27_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试" />
+
+    <TextView
+        android:id="@+id/tv27_cur_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv27_max_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

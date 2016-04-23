@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jooper.mydemos"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 电话状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.jooper.mydemos.base.MyApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105156698" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.ToastTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.TaobaoActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.AppinfoAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.AppinfoTwoAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.MarketDownLoadAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.ActAnimationAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.DataBaseAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.CheckNetWork"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.XUtilsDownLoad"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.GetTextById"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.BroadcastTest1"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.TableShow"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.GrouponIconTestAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.LVTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.ChartDynamicTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.CameraTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.MICTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.VoiWifiTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.XUtils3Test"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.DrawableTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.OkHttpTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.VideoTest"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.xUtilsPostAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.GetVersionByPkgNameAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.SocialShareAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.MemoryTestAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.AESAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.DoubleClickAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jooper.mydemos.RecyclerViewAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HeartDynamicAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PerfectDialogAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AutoTextViewAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MissedCallAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HomeKeyAct"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 未接来电监听 -->
+        <receiver android:name="com.jooper.mydemos.receiver.PhoneStateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+        <!-- 服务区域Start -->
+
+        <service android:name="com.jooper.mydemos.tableshowview.MserServes" />
+        <!-- 服务区域End -->
+    </application>
+
+</manifest>

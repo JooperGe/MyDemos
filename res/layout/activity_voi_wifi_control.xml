@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ABCDEF"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正常" />
+
+    <Button
+        android:id="@+id/btn_mute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静音" />
+
+    <Button
+        android:id="@+id/btn_shake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="震动" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_3G_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3G_open" />
+
+        <Button
+            android:id="@+id/btn_3G_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3G_close" />
+
+        <Button
+            android:id="@+id/btn_GPS_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS_open" />
+
+        <Button
+            android:id="@+id/btn_GPS_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS_close" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cur_volum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前音量：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_get_mobile_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取移动网络状态" />
+
+        <Button
+            android:id="@+id/btn_mobile_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开移动网络" />
+
+        <Button
+            android:id="@+id/btn_mobile_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭移动网络" />
+    </LinearLayout>
+
+</LinearLayout>

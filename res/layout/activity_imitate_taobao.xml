@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ABCDEF" >
+
+    <!-- 长宽可自定义,但是设置的过大,会保持原位 -->
+    <!-- align要自己設，靠一边 -->
+
+    <com.jooper.mydemos.TaoBaoRelative.ComposerLayout
+        android:id="@+id/test"
+        android:layout_width="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+    </com.jooper.mydemos.TaoBaoRelative.ComposerLayout>
+
+</RelativeLayout>
