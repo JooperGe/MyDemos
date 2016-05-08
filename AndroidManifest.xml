@@ -23,6 +23,7 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <!-- 电话状态 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -275,6 +276,14 @@
 
         <service android:name="com.jooper.mydemos.tableshowview.MserServes" />
         <!-- 服务区域End -->
+
+
+        <!-- SIM卡状态监听 -->
+        <receiver android:name="com.jooper.mydemos.MyUtils.SIMStateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

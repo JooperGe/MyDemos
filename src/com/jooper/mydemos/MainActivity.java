@@ -83,6 +83,11 @@ public class MainActivity extends BaseAct implements OnClickListener {
 		// // 开启Home键监听
 		// mHomeWatcher.startWatch();
 
+		Toast.makeText(
+				mContext,
+				android.os.Build.VERSION.SDK + " - "
+						+ android.os.Build.VERSION.RELEASE, 0).show();
+
 		SimpleDateFormat sDateFormat = new SimpleDateFormat(
 				"yyyy-MM-dd    hh:mm:ss");
 		String dateStr = sDateFormat.format(new java.util.Date());
